@@ -1,11 +1,11 @@
 {
-    "name": "flutter_application_2",
-    "short_name": "flutter_application_2",
+    "name": "FitBuddy",
+    "short_name": "FitBuddy",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0F172A",
+    "theme_color": "#00DC82",
+    "description": "Your fitness buddy",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
