@@ -383,7 +383,9 @@ class _AdminDashboardPageState extends State<AdminDashboardPage> {
             physics: const NeverScrollableScrollPhysics(),
             mainAxisSpacing: 12,
             crossAxisSpacing: 12,
-            childAspectRatio: 1.35,
+            // Keep enough vertical room for the value, label, and subtitle
+            // on narrow phones so the KPI cards do not overflow at the bottom.
+            childAspectRatio: 1.15,
             children: [
               _Kpi(
                 icon: Icons.groups_outlined,
@@ -919,9 +921,10 @@ class _Kpi extends StatelessWidget {
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Icon(icon, color: kBlue, size: 22),
+          const SizedBox(height: 8),
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
